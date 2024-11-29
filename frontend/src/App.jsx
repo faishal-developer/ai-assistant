@@ -37,7 +37,7 @@ const App = () => {
     setResults([])
     setLoading(true)
     
-    const response = await axios.post('http://localhost:4000/api/v1/generate', { prompt:keyword });
+    const response = await axios.post('https://ai-assistant-one-flax.vercel.app/api/v1/generate', { prompt:keyword });
     setResults(response.data?.data);
     console.log(response.data)
     setLoading(false)
