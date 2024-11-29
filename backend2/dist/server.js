@@ -22,10 +22,11 @@ process.on('uncaughtException', error => {
 });
 let server;
 function main() {
+    var _a;
     return __awaiter(this, void 0, void 0, function* () {
         try {
             yield mongoose_1.default.connect(config_1.default.database_url);
-            server = app_1.default.listen(config_1.default.port, () => {
+            server = app_1.default.listen((_a = config_1.default.port) !== null && _a !== void 0 ? _a : 4000, () => {
                 console.log('app is connected with database');
             });
             console.log(config_1.default.database_url);
