@@ -1,0 +1,59 @@
+.skeleton-container {
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+  }
+  
+  .skeleton-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    margin-right: 20px;
+  }
+  
+  .skeleton-text {
+    flex: 1;
+  }
+  
+  .skeleton-line {
+    height: 15px;
+    background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 5px;
+    margin: 8px 0;
+  }
+  
+  .title {
+    width: 60%;
+    height: 20px;
+  }
+  
+  .short {
+    width: 40%;
+  }
+  
+  .medium {
+    width: 80%;
+  }
+  
+  .full {
+    width: 100%;
+  }
+  
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+  
